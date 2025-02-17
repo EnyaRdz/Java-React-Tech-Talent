@@ -11,5 +11,4 @@ public class Tasque4_4 {
 	N *= 2;
 	System.out.println("Duplica N = " +N);
 	}
-
 }

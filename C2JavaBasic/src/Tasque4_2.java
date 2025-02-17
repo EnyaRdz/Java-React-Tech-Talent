@@ -5,7 +5,7 @@ public class Tasque4_2 {
 		double A = 15.5;
 		char C = 'X';
 		
-		//Imprimir los valores en la consola
+		//Valores en la consola
 		System.out.println("El valor de N es:" +N);
 		System.out.println("En valor de A es:" +A);
 		System.out.println("El valor de C es:" +C);

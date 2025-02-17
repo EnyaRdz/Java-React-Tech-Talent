@@ -6,7 +6,7 @@ public class Tasque4_3 {
 		double N = 6.5;
 		double M = 2.4;
 		
-		//Programo las operaciones y explicación.
+		//Se programan las operaciones y explicación.
 		
 	
 		//Operaciones con X,Y
