@@ -1,7 +1,6 @@
+package Pruebas;
 public class ConstantesApp {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		final double IVA=0.18;
 		int producto=300;
 		
@@ -9,5 +8,4 @@ public class ConstantesApp {
 		
 		System.out.println("El IVA del producto es " +resultado);
 	}
-
 }

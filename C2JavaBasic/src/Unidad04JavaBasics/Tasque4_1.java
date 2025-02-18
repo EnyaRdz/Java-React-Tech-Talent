@@ -1,3 +1,4 @@
+package Unidad04JavaBasics;
 public class Tasque4_1 {
 	public static void main(String[] args) {
 		int a=50;
