@@ -9,10 +9,10 @@ public class Tasque5_2 {
 		System.out.println("Bienvenido/a");
 		System.out.println("Introduce tu nombre:");
 		
-		String name = sc.nextLine();
+		String nombre = sc.nextLine();
 		sc.close();
 
-		System.out.println("Bienvenido/a " +name.toUpperCase());
+		System.out.println("Bienvenido/a " +nombre.toUpperCase());
 	}
 
 }
