@@ -5,7 +5,8 @@ public class ClaseInteger1{
 		Integer num1=new Integer("125");
 		
 		//Creacion de un objeto Integer usando el primer constructor
-		Integer num2=new Integer(20);
+		//Integer num2=new Integer(20);
+		int num2 = 20;
 
 		//Obtencion del entero que almacena cada objeto Integer.
 		//Si no se hace esto, las lineas siguientes causarian error
