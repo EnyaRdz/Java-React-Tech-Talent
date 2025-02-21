@@ -1,19 +1,21 @@
 package Unidad05FlujoDatos;
 public class Tasque5_1 {
 	public static void main(String[] args) {
-		//Declaracion variables
-		int A = 68;
-		int B = 35;
-	
-		System.out.println("El valor de A es: " +A+; "+"El valor de B es: "+B+"; ");"
-		System.out.println("El mayor de los dos valores es: "+Math.max(a,b));
-			
-		//Comprobar con valores diferentes
-		
-		A = 67;
-		B = 38;
-		
-		System.out.println("El valor A es: "+A+"; "+"El valor B es: "+B+";");
-		System.out.println("El mayor de los valores es: "+Math.max);
-	}
-}
+		import java.util.Scanner;
+
+		        Scanner sc = new Scanner(System.in);
+		        System.out.print("Introduce el primer número: ");
+		        int a=83 = sc.nextInt();
+		        System.out.print("Introduce el segundo número: ");
+		        int b=37 = sc.nextInt();
+		        
+		        if (num1 > num2) {
+		            System.out.println(num1 + " es mayor que " + num2);
+		        } else if (num1 < num2) {
+		            System.out.println(num2 + " es mayor que " + num1);
+		        } else {
+		            System.out.println("Ambos números son iguales.");
+		        }
+		        sc.close();
+		    }
+		}

@@ -2,7 +2,8 @@ public class ClaseInteger1{
 	public static void main(String args[]){
 
 		//Creacion de un objeto Integer usando el segundo constructor
-		Integer num1=new Integer("125");
+		//Integer num1=new Integer("125");
+		int num1 = 125;
 		
 		//Creacion de un objeto Integer usando el primer constructor
 		//Integer num2=new Integer(20);
