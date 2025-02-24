@@ -6,6 +6,7 @@ public class Tasque4_5 {
 	int B = 4;
 	int C = 6;
 	int D = 10;
+	int B1 = B;
 	System.out.println("Valor de cada variable = "+"A="+A+"; B="+B+"; C="+C+"; D="+D+";");
 	
 	//B Toma el valor de C
@@ -21,7 +22,7 @@ public class Tasque4_5 {
 	System.out.println("A Toma el valor de D = "+ A);
 	
 	//D Toma el valor de B
-	D = B;
+	D = B1;
 	System.out.println("D toma el valor de B = "+ D);
 	
 	//Valores finales 
