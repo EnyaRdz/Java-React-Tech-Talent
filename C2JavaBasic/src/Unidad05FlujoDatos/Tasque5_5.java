@@ -1,25 +1,17 @@
 package Unidad05FlujoDatos;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class Tasque5_5 {
-
-	public static void main(String[] args) {
-
-				//Ejer: Lee un número por teclado e indica 
-				//si es divisible entre 2 (resto = 0). Si no lo es, también
-				//debemos indicarlo.
-				
-				int  numero = Integer.parseInt(JOptionPane.showInputDialog(
-						"Introduce un número: ")); 
-				int resto = numero%2;
-				
-				if (resto==0) {
-					JOptionPane.showMessageDialog(null, "Si es par");
-				} else {
-					JOptionPane.showMessageDialog(null, "Es impar");
-				}
-				
-	}
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Introduce un número: ");
+        int numero = sc.nextInt();
+        if (numero % 2 == 0) {
+            System.out.println("El número es divisible entre 2");
+        } else {
+            System.out.println("El número no es divisible entre 2");
+        }
+        sc.close();
+    }
 }
