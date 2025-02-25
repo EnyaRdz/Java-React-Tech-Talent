@@ -1,18 +1,8 @@
 package Unidad05FlujoDatos;
 
-import java.util.Scanner;
-
 public class Tasque5_2 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Bienvenido/a");
-		System.out.println("Introduce tu nombre:");
-		
-		String nombre = sc.nextLine();
-		sc.close();
-
-		System.out.println("Bienvenido/a " +nombre.toUpperCase());
-	}
-
+    public static void main(String[] args) {
+        String nombre = "Enya";
+        System.out.println("Bienvenida " + nombre);
+    }
 }
