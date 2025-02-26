@@ -11,6 +11,8 @@ public class Tasque5_11 {
             case "lunes", "martes", "miercoles", "jueves", "viernes":
                 System.out.println("Es un día laboral");
                 break;
+           
+   
             case "sábado", "domingo":
                 System.out.println("No es un día laboral");
                 break;
