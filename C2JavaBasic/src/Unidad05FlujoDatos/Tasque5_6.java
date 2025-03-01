@@ -11,5 +11,5 @@ public class Tasque5_6 {
         double precioFinal = precio + (precio * IVA);
         System.out.println("El precio final con IVA es: " + precioFinal);
         sc.close();
-    }
+    } 
 }
