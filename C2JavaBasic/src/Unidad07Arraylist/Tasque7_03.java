@@ -16,7 +16,14 @@ public class Tasque7_03 {
         HashMap<String, Integer> inventario = new HashMap<>();
         inventario.put("Manzanas", 50);
         inventario.put("Leche", 30);
-        inventario.put("Pan", 20);
+        inventario.put("Pan", 24);
+        inventario.put("Uva", 15);
+        inventario.put("Naranja", 36);
+        inventario.put("Pera", 16);
+        inventario.put("Platano", 37);
+        inventario.put("Fresa", 9);
+        inventario.put("Mora", 23);
+        inventario.put("Toronja", 23);
         return inventario;
     }
 
