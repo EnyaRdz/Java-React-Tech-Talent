@@ -195,4 +195,4 @@ public class Tasque7_04 {
         return valor;
     }
 }
-
+//Cambiar el precio de venta a redondear por los dos finales como en el como en la linea 170
