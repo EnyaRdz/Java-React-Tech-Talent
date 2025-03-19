@@ -38,3 +38,4 @@ public class Tasque6_10 {
         return true;
     }
 }
+//Modificar que falta el minimo
