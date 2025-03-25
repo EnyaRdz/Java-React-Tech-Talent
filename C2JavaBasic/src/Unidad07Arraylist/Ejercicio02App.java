@@ -1,10 +1,10 @@
-package Unidad07Arraylist;
+package ud07ArrayListYHashMapEjercicios;
 
 // Importamos las librerías necesarias
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Ejercicio02App {
+public class App02flujoDeVentas {
 
 // Método principal: punto de inicio del programa
 	public static void main(String[] args) {
@@ -66,23 +66,21 @@ public class Ejercicio02App {
 	}
 
 // Método para mostrar un resumen de la compra
-	public static void resumen(double IVA, double suma, double totalconIVA, ArrayList<Double> carrito) {
-		System.out.println("\n--- Resumen de la compra ---");
-		System.out.println("IVA aplicado: " + (IVA * 100) + "%"); // Muestra el IVA aplicado
-		System.out.println("Precio bruto: " + (Math.round(suma * 100.0) / 100.0)); // Precio sin IVA
-		System.out.println("Precio total (con IVA): " + (Math.round(totalconIVA * 100.0) / 100.0)); // Total con IVA
-		System.out.println("Número de artículos comprados: " + carrito.size()); // Número de productos
-	}
+public static void resumen(double IVA, double suma, double totalconIVA, ArrayList<Double> carrito) {
+System.out.println("\n--- Resumen de la compra ---");
+System.out.println("IVA aplicado: " + (IVA * 100) + "%"); // Muestra el IVA aplicado
+System.out.println("Precio bruto: " + (Math.round(suma * 100.0) / 100.0)); // Precio sin IVA
+System.out.println("Precio total (con IVA): " + (Math.round(totalconIVA * 100.0) / 100.0)); // Total con IVA
+System.out.println("Número de artículos comprados: " + carrito.size()); // Número de productos
+}
 
 // Método para gestionar el pago y calcular el cambio
-	public static void pagoYcambio(Scanner sc, double totalconIVA) {
-		System.out.println("Ingrese la cantidad pagada por el cliente: ");
-		double pago = sc.nextDouble(); // Lee la cantidad pagada
-		double cambio = Math.round((pago - totalconIVA) * 100.0) / 100.0; // Calcula el cambio redondeado
-		if (cambio < 0) { // Verifica si falta dinero
-			System.out.println("Falta " + cambio + " por pagar.");
-		} else {
-			System.out.println("Cambio a devolver: " + cambio + " €"); // Muestra el cambio a devolver
-		}
-	}
+public static void pagoYcambio(Scanner sc, double totalconIVA) {
+System.out.println("Ingrese la cantidad pagada por el cliente: ");
+double pago = sc.nextDouble(); // Lee la cantidad pagada
+double cambio = Math.round((pago - totalconIVA) * 100.0) / 100.0; // Calcula el cambio redondeado
+if (cambio < 0) { // Verifica si falta dinero
+System.out.println("Falta " + cambio + " por pagar.");
+} else {
+System.out.println("Cambio a devolver: " + cambio + " €"); // Muestra el cambio a devolver
 }

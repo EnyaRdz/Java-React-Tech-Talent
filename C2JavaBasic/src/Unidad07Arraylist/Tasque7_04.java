@@ -13,6 +13,7 @@ public class Tasque7_04 {
         elegirModo();
     }
 
+    
     // 🔹 Menú para elegir entre Administrador o Usuario
     private static void elegirModo() {
         String[] opciones = {"Administrador", "Usuario", "Salir"};
