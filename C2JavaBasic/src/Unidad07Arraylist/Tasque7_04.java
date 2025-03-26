@@ -1,5 +1,4 @@
 package Unidad07Arraylist;
-
 import javax.swing.*;
 import java.util.*;
 
@@ -13,8 +12,7 @@ public class Tasque7_04 {
         elegirModo();
     }
 
-    
-    // 🔹 Menú para elegir entre Administrador o Usuario
+    // Menú per escollir entre usuari i administrador
     private static void elegirModo() {
         String[] opciones = {"Administrador", "Usuario", "Salir"};
         int opcion = JOptionPane.showOptionDialog(null, "Selecciona el modo de acceso:",
@@ -22,13 +20,13 @@ public class Tasque7_04 {
                 null, opciones, opciones[0]);
 
         switch (opcion) {
-            case 0 -> mostrarMenuStock(); // Modo Administrador (Gestión de Stock)
-            case 1 -> mostrarMenuCompras(); // Modo Usuario (Ventas)
-            case 2 -> System.exit(0); // Salir de la aplicación
+            case 0 -> mostrarMenuStock(); 
+            case 1 -> mostrarMenuCompras(); 
+            case 2 -> System.exit(0); 
         }
     }
 
-    // 🔹 Inicializa el inventario con productos, precios y stock
+    // Inicialitza la llista de productes amb inventari preus
     private static void inicializarInventario() {
         agregarProducto("Manzana", 0.99, 50);
         agregarProducto("Leche", 1.49, 30);
@@ -37,7 +35,7 @@ public class Tasque7_04 {
         agregarProducto("Huevos", 3.50, 60);
     }
 
-    // 🔹 Menú de Administrador (Gestión de Stock con Scanner)
+    // Menú administrador amb scanner
     private static void mostrarMenuStock() {
         int opcion;
         do {
@@ -53,13 +51,13 @@ public class Tasque7_04 {
                 case 1 -> listarProductos();
                 case 2 -> consultarProducto();
                 case 3 -> añadirOActualizarProducto();
-                case 4 -> elegirModo(); // Volver al menú principal
+                case 4 -> elegirModo(); // Això torna al menú principal
                 default -> System.out.println("Opción no válida.");
             }
         } while (opcion != 4);
     }
 
-    // 🔹 Menú de Usuario (Compras con JOptionPane)
+    // Menú de compres amb JOptionPane
     private static void mostrarMenuCompras() {
         String[] opciones = {"Agregar producto al carrito", "Finalizar compra", "Volver al menú principal"};
         boolean seguirComprando = true;
@@ -155,16 +153,16 @@ public class Tasque7_04 {
             return;
         }
 
-        double suma = carrito.stream().mapToDouble(Double::doubleValue).sum();
+        double suma = 0; for (double precio : carrito) { suma += precio; }
         String[] opcionesIVA = {"21%", "4%"};
         int opcionIVA = JOptionPane.showOptionDialog(null, "Selecciona el IVA:",
                 "IVA", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
                 null, opcionesIVA, opcionesIVA[0]);
 
-        double IVA = opcionIVA == 0 ? 0.21 : 0.04;
-        double totalConIVA = suma * (1 + IVA);
+        double IVA = opcionIVA == 0 ? 0.21 : 0.04; //Ternario wtf? Por qué no poner que cada botón referencia a los porcentajes tal cual?
+        double totalConIVA = suma * (1 + IVA); //Hacer un String.format("%.2f", y lo que sea) para truncar decimales
 
-        double pago = Double.parseDouble(JOptionPane.showInputDialog("Total: " + totalConIVA + "€. Introduce el pago:"));
+        double pago = Double.parseDouble(JOptionPane.showInputDialog("Total: " + String.format("%.2f", totalConIVA) + "€. Introduce el pago:"));
         double cambio = pago - totalConIVA;
 
         if (cambio < 0) {
@@ -196,4 +194,3 @@ public class Tasque7_04 {
         return valor;
     }
 }
-//Cambiar el precio de venta a redondear por los dos finales como en el como en la linea 170
