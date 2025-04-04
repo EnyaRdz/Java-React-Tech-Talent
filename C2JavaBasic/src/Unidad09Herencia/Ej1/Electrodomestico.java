@@ -1,4 +1,4 @@
-package Unidad09Herencia;
+package Unidad09Herencia.Ej1;
 
 public class Electrodomestico {
 
