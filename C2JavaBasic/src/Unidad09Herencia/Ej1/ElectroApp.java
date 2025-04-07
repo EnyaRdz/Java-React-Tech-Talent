@@ -4,7 +4,7 @@ public class ElectroApp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
- // Instanciación de los objetos Lavadora y Television
+		// Instanciación de los objetos Lavadora y Television
 	}
 
 }

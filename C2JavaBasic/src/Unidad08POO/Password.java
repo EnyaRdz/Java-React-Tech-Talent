@@ -3,6 +3,8 @@ package Unidad08POO;
 import java.util.Random;
 
 public class Password {
+	
+	//Atributos
     private int longitud;
     private String contrasena;
     private static final int LONGITUD_POR_DEFECTO = 8;
@@ -14,12 +16,13 @@ public class Password {
     
     // Constructor con longitud personalizada
     public Password(int longitud) {
-        this.longitud = longitud;
-        this.contrasena = generarPassword();
+        this.setLongitud(longitud);
+        this.contrasena = generarPassword(longitud);
     }
-    
-    private String generarPassword() {
+    //Metodos
+    private String generarPassword(int longitud) {
         String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        //Random de contraseña
         Random random = new Random();
         StringBuilder password = new StringBuilder();
         for (int i = 0; i < longitud; i++) {
@@ -32,4 +35,12 @@ public class Password {
         Password pass = new Password(12);
         System.out.println("Contraseña generada: " + pass.contrasena);
     }
+
+	public int getLongitud() {
+		return longitud;
+	}
+
+	public void setLongitud(int longitud) {
+		this.longitud = longitud;
+	}
 }

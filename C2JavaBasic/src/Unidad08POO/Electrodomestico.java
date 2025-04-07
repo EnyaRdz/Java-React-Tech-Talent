@@ -2,11 +2,13 @@ package Unidad08POO;
 
 // Clase Electrodomestico
 public class Electrodomestico {
+	
+	// Atributos
     protected double precioBase;
     protected String color;
     protected char consumoEnergetico;
     protected double peso;
-    
+	// Constantes
     private static final String COLOR_POR_DEFECTO = "Blanco";
     private static final char CONSUMO_POR_DEFECTO = 'F';
     private static final double PRECIO_POR_DEFECTO = 100;
