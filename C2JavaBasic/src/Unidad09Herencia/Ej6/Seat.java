@@ -1,6 +1,7 @@
 package Unidad09Herencia.Ej6;
 
 public class Seat {
+
     private int row;
     private char column;
     private boolean occupied;

@@ -1,9 +1,12 @@
 package Unidad09Herencia.Ej6;
 public class Movie {
-    private String title;
+
+    public static String title;
     private int duration;
     private int minAge;
     private String director;
+    private static final String FILE_NAME = "occupiedSeats"+title+".txt";
+    
 
     public Movie(String title, int duration, int minAge, String director) {
         this.title = title;
@@ -27,4 +30,4 @@ public class Movie {
     public String getDirector() {
         return director;
     }
-}
+} 
