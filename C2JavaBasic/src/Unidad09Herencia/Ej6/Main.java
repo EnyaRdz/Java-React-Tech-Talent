@@ -9,6 +9,7 @@ public class Main {
 	private static ArrayList<String> selectedSeats = new ArrayList<>();
 	private static final String FILE_NAME = "occupiedSeats.txt";
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		loadOccupiedSeats();
 
@@ -78,17 +79,17 @@ public class Main {
 
 					if (occupiedSeats.contains(seat)) {
 						button.setIcon(resizeIcon(new ImageIcon(
-								"\"C:\\Users\\Mati\\Desktop\\TechTalent\\Java-React-Tech-Talent\\C2JavaBasic\\src\\imagenes\\asiento_ocupado.png\""),
+								"C:\\Users\\Mati\\Desktop\\TechTalent\\Java-React-Tech-Talent\\C2JavaBasic\\src\\imagenes\\asiento_ocupado.png"),
 								40, 40));
 						button.setEnabled(false);
 					} else {
 						if (rowNumber == 4 || rowNumber == 5 || rowNumber == 6) {
 							button.setIcon(resizeIcon(new ImageIcon(
-									"\"C:\\Users\\Mati\\Desktop\\TechTalent\\Java-React-Tech-Talent\\C2JavaBasic\\src\\imagenes\\asiento_disponible.png\""),
+									"C:\\Users\\Mati\\Desktop\\TechTalent\\Java-React-Tech-Talent\\C2JavaBasic\\src\\imagenes\\asiento_disponible.png"),
 									40, 40));
 						} else {
 							button.setIcon(resizeIcon(new ImageIcon(
-									"\"C:\\Users\\Mati\\Desktop\\TechTalent\\Java-React-Tech-Talent\\C2JavaBasic\\src\\imagenes\\asiento_ocupado.png\""),
+									"C:\\Users\\Mati\\Desktop\\TechTalent\\Java-React-Tech-Talent\\C2JavaBasic\\src\\imagenes\\asiento_ocupado.png"),
 									40, 40));
 						}
 					}

@@ -9,7 +9,7 @@ public class Movie {
     
 
     public Movie(String title, int duration, int minAge, String director) {
-        this.title = title;
+        Movie.title = title;
         this.duration = duration;
         this.minAge = minAge;
         this.director = director;
@@ -30,4 +30,8 @@ public class Movie {
     public String getDirector() {
         return director;
     }
+
+	public static String getFileName() {
+		return FILE_NAME;
+	}
 } 
