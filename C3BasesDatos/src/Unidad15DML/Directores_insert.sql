@@ -1,6 +1,4 @@
-
 USE DirectoresPeliculas;
-
 INSERT INTO Directores (nombre, nacionalidad, fecha_nacimiento) VALUES
 ('Christopher Nolan', 'Británico', '1970-07-30'),
 ('Pedro Almodóvar', 'Español', '1949-09-25'),

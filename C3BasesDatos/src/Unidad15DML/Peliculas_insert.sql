@@ -1,6 +1,4 @@
-
 USE DirectoresPeliculas;
-
 INSERT INTO Peliculas (titulo, año, genero, id_director) VALUES
 ('Inception', 2010, 'Ciencia Ficción', 1),
 ('Dolor y Gloria', 2019, 'Drama', 2),
