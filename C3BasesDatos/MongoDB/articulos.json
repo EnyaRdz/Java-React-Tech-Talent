@@ -1,0 +1,12 @@
+[
+  { "Codigo": 1, "Nombre": "Portátil IdeaPad", "Precio": 599, "Fabricante": 1 },
+  { "Codigo": 2, "Nombre": "Impresora DeskJet", "Precio": 120, "Fabricante": 2 },
+  { "Codigo": 3, "Nombre": "Monitor 24\"", "Precio": 199, "Fabricante": 3 },
+  { "Codigo": 4, "Nombre": "MacBook Air", "Precio": 999, "Fabricante": 4 },
+  { "Codigo": 5, "Nombre": "Teclado Gaming", "Precio": 75, "Fabricante": 5 },
+  { "Codigo": 6, "Nombre": "Ratón óptico", "Precio": 20, "Fabricante": 6 },
+  { "Codigo": 7, "Nombre": "Disco Duro SSD", "Precio": 89, "Fabricante": 7 },
+  { "Codigo": 8, "Nombre": "Placa base Z590", "Precio": 230, "Fabricante": 8 },
+  { "Codigo": 9, "Nombre": "Tablet Galaxy Tab", "Precio": 299, "Fabricante": 9 },
+  { "Codigo": 10, "Nombre": "Pantalla LED 27\"", "Precio": 180, "Fabricante": 10 }
+]
