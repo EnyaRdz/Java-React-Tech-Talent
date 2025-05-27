@@ -1,0 +1,42 @@
+[
+  {
+    "numero": 101,
+    "capacidad": 2
+  },
+  {
+    "numero": 102,
+    "capacidad": 3
+  },
+  {
+    "numero": 103,
+    "capacidad": 1
+  },
+  {
+    "numero": 104,
+    "capacidad": 4
+  },
+  {
+    "numero": 105,
+    "capacidad": 2
+  },
+  {
+    "numero": 106,
+    "capacidad": 3
+  },
+  {
+    "numero": 107,
+    "capacidad": 1
+  },
+  {
+    "numero": 108,
+    "capacidad": 2
+  },
+  {
+    "numero": 109,
+    "capacidad": 4
+  },
+  {
+    "numero": 110,
+    "capacidad": 3
+  }
+]

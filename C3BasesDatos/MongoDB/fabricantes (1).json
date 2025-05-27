@@ -1,0 +1,42 @@
+[
+  {
+    "Codigo": 1,
+    "Nombre": "Lenovo"
+  },
+  {
+    "Codigo": 2,
+    "Nombre": "HP"
+  },
+  {
+    "Codigo": 3,
+    "Nombre": "Dell"
+  },
+  {
+    "Codigo": 4,
+    "Nombre": "Apple"
+  },
+  {
+    "Codigo": 5,
+    "Nombre": "Acer"
+  },
+  {
+    "Codigo": 6,
+    "Nombre": "MSI"
+  },
+  {
+    "Codigo": 7,
+    "Nombre": "Asus"
+  },
+  {
+    "Codigo": 8,
+    "Nombre": "Gigabyte"
+  },
+  {
+    "Codigo": 9,
+    "Nombre": "Samsung"
+  },
+  {
+    "Codigo": 10,
+    "Nombre": "Toshiba"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "dni": "01234567J",
+    "nombre_completo": "Sof\u00eda Romero",
+    "dni_jefe": "67890123F",
+    "despacho": 110
+  },
+  {
+    "dni": "12345678A",
+    "nombre_completo": "Laura Mart\u00ednez",
+    "dni_jefe": null,
+    "despacho": 101
+  },
+  {
+    "dni": "23456789B",
+    "nombre_completo": "Carlos L\u00f3pez",
+    "dni_jefe": "12345678A",
+    "despacho": 102
+  },
+  {
+    "dni": "34567890C",
+    "nombre_completo": "Elena Garc\u00eda",
+    "dni_jefe": "12345678A",
+    "despacho": 103
+  },
+  {
+    "dni": "45678901D",
+    "nombre_completo": "Miguel Torres",
+    "dni_jefe": "23456789B",
+    "despacho": 104
+  },
+  {
+    "dni": "56789012E",
+    "nombre_completo": "Ana Ruiz",
+    "dni_jefe": "23456789B",
+    "despacho": 105
+  },
+  {
+    "dni": "67890123F",
+    "nombre_completo": "Luc\u00eda Fern\u00e1ndez",
+    "dni_jefe": "34567890C",
+    "despacho": 106
+  },
+  {
+    "dni": "78901234G",
+    "nombre_completo": "Javier Ortega",
+    "dni_jefe": "34567890C",
+    "despacho": 107
+  },
+  {
+    "dni": "89012345H",
+    "nombre_completo": "Marta S\u00e1nchez",
+    "dni_jefe": "45678901D",
+    "despacho": 108
+  },
+  {
+    "dni": "90123456I",
+    "nombre_completo": "Pablo Moreno",
+    "dni_jefe": "56789012E",
+    "despacho": 109
+  }
+]
