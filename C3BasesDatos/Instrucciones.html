@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instrucciones - Tetris</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Header nuevo */
+    header.main-header {
+      width: 100%;
+      background: #0a0a0a;
+      border-bottom: 2px solid #0ff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 15px #0ff;
+      font-family: 'Orbitron', sans-serif;
+      position: relative;
+      z-index: 20;
+    }
+
+    header .logo img {
+      height: 50px;
+      filter: drop-shadow(0 0 5px #0ff);
+    }
+
+    header .nav-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    header .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    header .nav-links a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-shadow: 0 0 5px #0ff;
+      transition: color 0.2s ease;
+    }
+
+    header .nav-links a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .tetris-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .tetrimino {
+      position: absolute;
+      top: -100px;
+      left: var(--left);
+      display: grid;
+      gap: 2px;
+      opacity: 0.4;
+      animation: fall linear infinite;
+      animation-duration: var(--duration);
+      animation-delay: var(--delay);
+    }
+
+    .tetrimino div {
+      width: 20px;
+      height: 20px;
+      background-color: currentColor;
+      border-radius: 2px;
+      box-shadow: 0 0 10px currentColor;
+    }
+
+    .tetrimino.i { color: cyan; grid-template-columns: repeat(4, 20px); }
+    .tetrimino.o { color: yellow; grid-template-columns: repeat(2, 20px); grid-template-rows: repeat(2, 20px); }
+    .tetrimino.t { color: magenta; grid-template-columns: repeat(3, 20px); grid-template-rows: repeat(2, 20px); }
+    .tetrimino.s { color: lime; grid-template-columns: repeat(3, 20px); grid-template-rows: repeat(2, 20px); }
+    .tetrimino.z { color: red; grid-template-columns: repeat(3, 20px); grid-template-rows: repeat(2, 20px); }
+
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0deg); }
+      100% { transform: translateY(110vh) rotate(360deg); }
+    }
+
+    main.instrucciones {
+      position: relative;
+      z-index: 10;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 80px auto 0; /* espacio para header */
+    }
+
+    .contenido {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    }
+
+    h1, h2 {
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: cyan;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: magenta;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    iframe {
+      display: block;
+      margin: 0 auto 2rem;
+      max-width: 100%;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    .controles ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .controles ul li {
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+    }
+
+    .boton-jugar {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      color: #fff;
+      background-color: #1e90ff;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #1e90ff, 0 0 30px #1e90ff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .boton-jugar:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00ffff, 0 0 40px #00ffff;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <img src="LogoTetris.png" alt="Logo Tetris" />
+    </div>
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="MainMenu.html">Inicio</a>
+        <a href="Instrucciones.html">Jugar</a>
+        <a href="Marcador.html">Marcador</a>
+        <a href="Creditos.html">Créditos</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="tetris-bg" aria-hidden="true">
+    <div class="tetrimino i" style="--left: 5%; --duration: 7s; --delay: 0s;">
+      <div></div><div></div><div></div><div></div>
+    </div>
+    <div class="tetrimino o" style="--left: 20%; --duration: 6s; --delay: 2s;">
+      <div></div><div></div><div></div><div></div>
+    </div>
+    <div class="tetrimino t" style="--left: 35%; --duration: 8s; --delay: 1s;">
+      <div></div><div></div><div></div><div></div>
+    </div>
+    <div class="tetrimino s" style="--left: 50%; --duration: 7.5s; --delay: 0.5s;">
+      <div></div><div></div><div></div><div></div>
+    </div>
+    <div class="tetrimino z" style="--left: 65%; --duration: 9s; --delay: 3s;">
+      <div></div><div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <main class="instrucciones">
+    <div class="contenido">
+      <h1>¿Cómo se juega al Tetris?</h1>
+      <p>
+        El objetivo del Tetris es encajar piezas que caen del cielo llamadas "Tetriminos" en un tablero. 
+        Cuando completas una línea horizontal sin huecos, esa línea desaparece y ganas puntos.
+        El juego termina si los bloques llegan hasta la parte superior del tablero.
+      </p>
+
+     <video controls width="560" style="display: block; margin: 0 auto 2rem; border-radius: 10px; box-shadow: 0 0 20px rgba(255,255,255,0.2);">
+      <source src="tetris.mp4" type="video/mp4">
+    </video>
+
+      <div class="controles">
+        <h2>Controles</h2>
+        <ul>
+          <li><strong>← / →</strong>: Mover</li>
+          <li><strong>↓</strong>: Bajar suave</li>
+          <li><strong>↑</strong>: Girar</li>
+          <li><strong>Espacio</strong>: Caída</li>
+          <li><strong>C</strong>: Guardar</li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="juego/index.html" class="boton-jugar">🎮 Jugar</a>
+    </div>
+  </main>
+</body>
+</html>

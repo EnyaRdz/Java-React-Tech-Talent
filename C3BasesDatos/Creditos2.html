@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CrÃ©ditos Deluxe 3D - Tetris</title>
+  <title>Creditos Deluxe 3D - Tetris</title>
   <style>
     :root {
       --color-neon-cyan: cyan;
@@ -92,9 +92,67 @@
     #icono-sonido-off { display: none; }
     #control-sonido.inactivo #icono-sonido-on { display: none; }
     #control-sonido.inactivo #icono-sonido-off { display: block; }
+    
+    /* Header nuevo */
+    header.main-header {
+      width: 100%;
+      background: #0a0a0a;
+      border-bottom: 2px solid #0ff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 15px #0ff;
+      font-family: 'Orbitron', sans-serif;
+      position: relative;
+      z-index: 20;
+    }
+
+    header .logo img {
+      height: 50px;
+      filter: drop-shadow(0 0 5px #0ff);
+    }
+
+    header .nav-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    header .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    header .nav-links a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-shadow: 0 0 5px #0ff;
+      transition: color 0.2s ease;
+    }
+
+    header .nav-links a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #0ff;
+    }
   </style>
 </head>
 <body>
+  
+  <header class="main-header">
+    <div class="logo">
+      <img src="LogoTetris.png" alt="Logo Tetris" />
+    </div>
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="MainMenu.html">Inicio</a>
+        <a href="Instrucciones.html">Jugar</a>
+        <a href="Marcador.html">Marcador</a>
+        <a href="Creditos.html">Créditos</a>
+      </nav>
+    </div>
+  </header>
     <div id="control-sonido">
         <svg id="icono-sonido-on" viewBox="0 0 24 24"><path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" /></svg>
         <svg id="icono-sonido-off" viewBox="0 0 24 24"><path d="M12,4L7,9H3V15H7L12,20V4M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,12.28 18.98,12.55 18.94,12.82L19.71,13.59C20.42,12.91 21,12.05 21,11.96C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12M1.27,1.27L22.73,22.73L21.46,24L16,18.54V20L12,16L7,11H3V13.46L1.27,1.27Z" /></svg>
@@ -112,19 +170,19 @@
     <main class="creditos">
         <div class="contenido">
             <h1 id="titulo-principal" data-texto="Sobre Nosotros"></h1>
-            <p class="intro">Este proyecto ha sido desarrollado por un equipo apasionado por la programaciÃ³n y los videojuegos clÃ¡sicos.</p>
+            <p class="intro">Este proyecto ha sido desarrollado por un equipo apasionado por la programación y los videojuegos clásicos.</p>
             <h2>El Equipo</h2>
             <div class="equipo-container">
                 <div class="miembro-card"
-                     data-nombre="Adria Galera"
+                     data-nombre="Adrià Galera"
                      data-linkedin="https://www.linkedin.com/in/adriagalerasanchez/"
                      data-github="https://github.com/DjAdria001"
                      data-skills="Liderazgo, 85;JavaScript, 90;Estrategia, 75"
-                     data-fact="Su carta PokÃ©mon mÃ¡s valiosa es un Moltres ex del Team Rocket."
+                     data-fact="Su carta Pokémon más valiosa es un Moltres ex del Team Rocket."
                      data-tetrimino="T">
                     <div class="card-content">
                         <img class="miembro-foto" src="https://media.licdn.com/dms/image/v2/D4E03AQFATzhMIEaaFA/profile-displayphoto-shrink_400_400/B4EZU0wul4GgAs-/0/1740346944546?e=1755734400&v=beta&t=xZ8Z0SdcPPgzygbSzc9SxFx5Do3u9Cqtc4j-RYS7X3w" alt="Adria Galera">
-                        <h3>Adria Galera</h3>
+                        <h3>Adrià Galera</h3>
                     </div>
                     <div class="miembro-preview">Ver Perfil</div>
                     <p class="descripcion-oculta">Director Ejecutivo y Programador Jefe. Visionario detrÃ¡s del concepto original de Tetris â€”aunque los derechos no le acompaÃ±aronâ€”, AdriÃ¡ es un lÃ­der en formaciÃ³n con madera de macho alfa (en prÃ¡cticas). Su enfoque tÃ©cnico y estratÃ©gico ha sido clave para el desarrollo del equipo. AdemÃ¡s, es poseedor de una valiosa colecciÃ³n de cartas PokÃ©mon, cuyo valor de mercado podrÃ­a rivalizar con el presupuesto anual de algunos estudios independientes. Es considerado un capo de la programaciÃ³n, hasta el punto de que los bugs le respetan.</p>
@@ -133,8 +191,8 @@
                      data-nombre="Daniel Alvaro"
                      data-linkedin="https://www.linkedin.com/in/daniel-garcia-alvaro/"
                      data-github="https://github.com/DDDani130"
-                     data-skills="DiseÃ±o GrÃ¡fico, 95;UI/UX, 85;Creatividad, 90"
-                     data-fact="Me falta la falange del segundo dedo del pie izquierdo, no hay uÃ±a."
+                     data-skills="Diseño Gráfico, 95;UI/UX, 85;Creatividad, 90"
+                     data-fact="Me falta la falange del segundo dedo del pie izquierdo, no hay uña."
                      data-tetrimino="Z">
                     <div class="card-content">
                         <img class="miembro-foto" src="https://cdn.discordapp.com/attachments/1385177609536536696/1385181005773803560/image.png?ex=685521d7&is=6853d057&hm=05aaf3927f4e36f4812df83e65a82bd82a80e435cc9fb735cd5f55091075bf2c&" alt="Daniel Alvaro">
@@ -147,7 +205,7 @@
                      data-nombre="Alba Maydeu"
                      data-linkedin="https://www.linkedin.com/in/alba-maydeu-arino/"
                      data-github="https://github.com/albamayari"
-                     data-skills="Project Management, 95;Marketing, 80;ComunicaciÃ³n, 90"
+                     data-skills="Project Management, 95;Marketing, 80;Comunicación, 90"
                      data-fact="Su pastel favorito es de platano."
                      data-tetrimino="T">
                     <div class="card-content">
@@ -161,8 +219,8 @@
                      data-nombre="Enya Rodriguez"
                      data-linkedin="https://www.linkedin.com/in/enya-stephanie-rodr%C3%ADguez/"
                      data-github="https://github.com/EnyaRdz"
-                     data-skills="DirecciÃ³n de Arte, 90;EstÃ©tica Visual, 95;QA & Testing, 80"
-                     data-fact="Una vez comiÃ³ un habanero sin beber agua."
+                     data-skills="Dirección de Arte, 90;Estética Visual, 95;QA & Testing, 80"
+                     data-fact="Una vez comió un habanero sin beber agua."
                      data-tetrimino="I">
                     <div class="card-content">
                         <img class="miembro-foto" src="https://cdn.discordapp.com/attachments/1385177609536536696/1385180859988185169/1748283938154.png?ex=685521b4&is=6853d034&hm=3e75ab623a83fe5af83d7576548351f6765b47a874814051bcbc724d28ac9588&" alt="Enya Rodriguez">
