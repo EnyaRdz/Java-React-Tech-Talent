@@ -3,12 +3,13 @@
   <groupId>com.videoclub</groupId>
   <artifactId>mvc-cliente</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-</project>
-
-<dependencies>
+  
+  <dependencies>
   <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
     <version>8.0.33</version>
   </dependency>
 </dependencies>
+</project>
+

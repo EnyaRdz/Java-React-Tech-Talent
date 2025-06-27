@@ -11,7 +11,6 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import com.videoclub.controller.ClienteController;
-
 public class ClienteView extends JFrame {
     // Componentes
     private JTextField txtId, txtNombre, txtDireccion, txtDni;
